@@ -35,6 +35,15 @@ AnyBuy is a Flutter application designed to provide users with a convenient plat
 
 4. Run the application:
 
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  flutter pub get 
+```
+
+
 
 ## Contribution
 
