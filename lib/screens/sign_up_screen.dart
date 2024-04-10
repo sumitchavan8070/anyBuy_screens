@@ -154,7 +154,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
             child: ElevatedButton(
               onPressed: () async {
-                context.go(GoPaths.page1);
+                context.go(GoPaths.dashboardScreen);
               },
               // Button label
               style: getElevatedButtonStyle(

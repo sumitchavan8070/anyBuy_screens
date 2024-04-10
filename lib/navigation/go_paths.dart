@@ -8,6 +8,7 @@ class GoPaths {
 
 static const String homeViewScreen = '/homeViewScreen';
 static const String forgotPassword = '/forgotPassword';
+static const String aboutUs = '/aboutUs';
 // static const String signUpScreen = '/signUpScreen';
 static const String dashboardScreen = '/dashboardScreen';
 

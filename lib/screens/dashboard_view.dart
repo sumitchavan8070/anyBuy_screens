@@ -130,19 +130,20 @@ class DashboardScreenState extends State<DashboardScreen> with SingleTickerProvi
             children: [
               const SizedBox(height: 100),
               GestureDetector(
-                onTap: () {
-                  if (_getXMainController.isDrawerOpened.value == true) {
-                    _getXMainController.closeDrawer();
-                  } else {
-                    _getXMainController.openDrawer();
-                  }
-                },
-                child: SvgPicture.asset(
-                  _getXMainController.isDrawerOpened.value ? AssetPath.menuOpen :                  AssetPath.menuClose,
-                  height: 38,
-                  width: 38,
-                ),
-              ),
+                  onTap: () {
+                    if (_getXMainController.isDrawerOpened.value == true) {
+                      _getXMainController.closeDrawer();
+                    } else {
+                      _getXMainController.openDrawer();
+                    }
+                  },
+                  child: Obx(
+                    () => SvgPicture.asset(
+                      _getXMainController.isDrawerOpened.value ? AssetPath.menuOpen : AssetPath.menuClose,
+                      height: 38,
+                      width: 38,
+                    ),
+                  )),
               const Spacer(),
               SvgPicture.asset(
                 AssetPath.appLogo,
@@ -164,7 +165,6 @@ class DashboardScreenState extends State<DashboardScreen> with SingleTickerProvi
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 40),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12),
                 child: Text(

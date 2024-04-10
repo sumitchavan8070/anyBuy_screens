@@ -1,6 +1,7 @@
 import 'package:anybuy/constants/bottom_navigation.dart';
 import 'package:anybuy/navigation/go_paths.dart';
 import 'package:anybuy/rootscreens.dart';
+import 'package:anybuy/screens/about_us.dart';
 import 'package:anybuy/screens/auth_screen_view.dart';
 import 'package:anybuy/screens/dashboard_view.dart';
 import 'package:anybuy/screens/forgot_password.dart';
@@ -43,7 +44,6 @@ final GoRouter goRouterConfig = GoRouter(
               builder: (BuildContext context, GoRouterState state) {
                 return const Center(child: DashboardScreen());
               }),
-
           GoRoute(
               path: GoPaths.page3,
               name: GoPaths.page3,
@@ -79,7 +79,14 @@ final GoRouter goRouterConfig = GoRouter(
       },
     ),
 
-
+    GoRoute(
+      parentNavigatorKey: navigatorKey,
+      path: GoPaths.aboutUs,
+      name: GoPaths.aboutUs,
+      builder: (context, state) {
+        return const AboutUs();
+      },
+    ),
 
     GoRoute(
       parentNavigatorKey: navigatorKey,

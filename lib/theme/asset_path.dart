@@ -2,6 +2,8 @@ class AssetPath {
   ///^^^^^^^^^^^^^^^     SVG      ^^^^^^^^^^^^^^^^^
 
   static const String appLogo = "assets/svg_images/appLOgo.svg";
+  static const String aboutUsLogo  = "assets/svg_images/aboutUsLogo.svg";
+
   static const String anyBuy = "assets/svg_images/anyBuy.svg";
   static const String google = "assets/svg_images/google.svg";
   static const String backButton = "assets/svg_images/backButton.svg";
@@ -16,6 +18,9 @@ class AssetPath {
   static const String menuClose  = "assets/svg_images/menu.svg";
   static const String menuOpen  = "assets/svg_images/menuOpen.svg";
   static const String ar  = "assets/svg_images/ar.svg";
+
+  // user jpeg
+  static const String userImage  = "assets/bottomNavigation/userImage.jpg";
 
 
   static const String drawerCart  = "assets/svg_images/drawerCart.svg";

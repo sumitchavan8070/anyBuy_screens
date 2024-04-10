@@ -22,6 +22,7 @@ class AppColors {
   static const Color mountainMist = Color(0xFF979797);
   static const Color darkGrey = Color(0xFF393939);
   static const Color greenWhite = Color(0xFFE7EAEE);
+  static const Color orangeyYellow = Color(0xFFFFB61D);
 
 
 

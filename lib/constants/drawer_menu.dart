@@ -1,4 +1,6 @@
 import 'package:anybuy/constants/key_value_pair.dart';
+import 'package:anybuy/navigation/go_paths.dart';
+import 'package:anybuy/navigation/my_navigator.dart';
 import 'package:anybuy/theme/app_colors.dart';
 import 'package:anybuy/theme/asset_path.dart';
 import 'package:flutter/material.dart';
@@ -69,16 +71,21 @@ class DrawerMenu extends StatelessWidget {
                   ),
                 );
               }),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "About us ",
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color: AppColors.white,
-                        ),
-                  ),
-                ],
+              GestureDetector(
+                onTap: () {
+                  MyNavigator.pushNamed(GoPaths.aboutUs );
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "About us ",
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                            color: AppColors.white,
+                          ),
+                    ),
+                  ],
+                ),
               ),
               const Spacer(),
               Padding(
