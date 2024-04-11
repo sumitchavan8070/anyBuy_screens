@@ -142,41 +142,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
               ),
               ),
             ),
-      // Obx(
-      //   () => BottomNavigationBar(
-      //     key: bottomNavigationBarKey,
-      //     elevation: 0,
-      //     type: BottomNavigationBarType.fixed,
-      //     backgroundColor: CupertinoColors.white,
-      //     selectedItemColor: AppColors.midGrey,
-      //     unselectedItemColor: AppColors.black,
-      //     selectedFontSize: 14,
-      //     unselectedFontSize: 14,
-      //     currentIndex: selectedIndex.toInt(), //New
-      //     onTap: (int idx) => _onItemTapped(idx, context),
-      //     items: [
-      //       BottomNavigationBarItem(
-      //         label: 'home',
-      //         icon: SvgPicture.asset(AssetPath.home).paddingOnly(bottom: 5),
-      //       ),
-      //       BottomNavigationBarItem(
-      //         label: 'home2',
-      //         icon: SvgPicture.asset(AssetPath.home).paddingOnly(bottom: 5),
-      //       ),
-      //       BottomNavigationBarItem(
-      //         label: 'home 3',
-      //         icon: SvgPicture.asset(AssetPath.home).paddingOnly(top: 1.5),
-      //       ),
-      //       BottomNavigationBarItem(
-      //         label: 'home 4',
-      //         icon: SvgPicture.asset(AssetPath.home).paddingOnly(bottom: 5),
-      //       ),
-      //
-      //     ],
-      //   ),
-      // ),
-      // body: Obx( () => _pages[controller.selectedIndex.toInt()]),
-      // drawer: const DrawerMenu(),
+
     );
   }
 
